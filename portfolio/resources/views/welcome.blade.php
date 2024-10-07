@@ -21,46 +21,42 @@
 
 <body class="antialiased">
     <div>
-        <nav class="navbar navbar-expand-lg header">
-            <div class="container-fluid menu">
-                <a class="navbar-brand logo" href="#">Navbar w/ text</a>
-                <span class="navbar-toggler drop" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </span>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active home" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                    </ul>
+        <x-navbar />
 
-                    <span class="">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Features</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
-                            </li>
-                        </ul>
+        <section class="head">
+            <div class="row">
+                <div class="col-md-8 my-profile">
+                    <span class="name">
+                        I'm <span class="my-name">Vianney YOVO</span>,
+                    </span><br>
+
+                    <span class="title">
+                        Software Engineer_
                     </span>
+                    <p class="bio">
+                        Passionate by software developement, I primarily use NestJS and Vue.js to build robust and high-performance web applications, with expertise in React Native for mobile development. As a Postman Student Leader, I promote API literacy on my campus. With Docker, I excel at containerizing applications and deploying them to cloud environments. My work also integrates MongoDB and TypeScript, allowing me to deliver reliable and scalable projects. Always seeking innovation, I am committed to sharing my knowledge with the tech community.
+                        I harmonize aesthetics and functionality to deliver an innovative user experience with AI integration.
+                    </p>
+                    <div>
+                    <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                    <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+                    </div>
+                </div>
+                <div class="col-md-4 photo">
+                    <img src="/images/vianneyyovo.jpg" alt="profile" class="profile">
+                    <span class="follow-me">
+                        Follow me on: <div class="vertical-line"></div>
+                    </span>
+
                 </div>
             </div>
-        </nav>
-        <div>
-            <section>
+        </section>
+        <section class="experiences">
+            <div>
+                ok
+            </div>
+        </section>
 
-            </section>
-        </div>
     </div>
     <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
         @if (Route::has('login'))
@@ -83,36 +79,86 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
     <style>
-        .header {
-            background-color: #583EBC;
+        .head {
             margin: 20px 50px 10px 50px;
-            border-radius: 50px;
         }
 
-        .menu {
-            margin: 0px 5px 0px 5px;
-        }
-
-        .drop {
-            color: white;
-        }
-
-        .menu li a {
-            color: white;
+        .profile {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            margin-bottom: 20px;
         }
 
         @media (min-width: 992px) {
-            .logo {
+            .photo {
+                width: 30rem;
+            }
+
+            .my-profile {
+                margin-top: 150px;
+            }
+
+            .name,
+            .title {
+                font-size: 60px;
+                font-weight: bold;
+                line-height: 70px;
+            }
+        }
+
+        .photo {
+            display: flex;
+        }
+
+
+        @media (max-width: 991.98px) {
+            .follow-me {
                 display: none;
             }
 
-            .home {
-            margin-left: -50px;
+            .name,
+            .title {
+                font-size: 45px;
+                font-weight: bold;
+                line-height: 45px;
+            }
         }
 
-        .menu ul li {
-            margin: 0px 0px 0px 60px;
+        .experiences {
+            background-color: #583EBC;
+            height: 50px;
         }
+
+        .follow-me {
+            transform: rotate(90deg);
+            transform-origin: left top;
+            font-size: 15px;
+            text-orientation: upright;
+            white-space: nowrap;
+            margin-left: 8rem;
+            color: #583EBC;
+            margin-top: 15rem;
+        }
+
+        .vertical-line {
+            transform: rotate(90deg);
+            width: 2px;
+            height: 60px;
+            background-color: #583EBC;
+            margin-left: 10rem;
+            margin-top: -2.5rem;
+        }
+
+        .my-name {
+            color: #583EBC;
+        }
+
+        .bio {
+            margin-top: 20px;
+            line-height: 30px;
+            word-wrap: break-word;
+            text-align: justify;
         }
     </style>
 </body>
