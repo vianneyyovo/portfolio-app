@@ -31,15 +31,15 @@
                     </span><br>
 
                     <span class="title">
-                        Software Engineer_
+                        Software Engineer<span id="dash">_</span>
                     </span>
                     <p class="bio">
                         Passionate by software developement, I primarily use NestJS and Vue.js to build robust and high-performance web applications, with expertise in React Native for mobile development. As a Postman Student Leader, I promote API literacy on my campus. With Docker, I excel at containerizing applications and deploying them to cloud environments. My work also integrates MongoDB and TypeScript, allowing me to deliver reliable and scalable projects. Always seeking innovation, I am committed to sharing my knowledge with the tech community.
-                        I harmonize aesthetics and functionality to deliver an innovative user experience with AI integration.
+                        <!-- I harmonize aesthetics and functionality to deliver an innovative user experience with AI integration. -->
                     </p>
-                    <div>
-                    <button type="button" class="btn btn-primary btn-sm">Small button</button>
-                    <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-secondary about-button gap-5">About</button>
+                        <button type="button" class="btn btn-secondary download-cv-button">Download CV</button>
                     </div>
                 </div>
                 <div class="col-md-4 photo">
@@ -52,8 +52,16 @@
             </div>
         </section>
         <section class="experiences">
-            <div>
-                ok
+            <div class="head">
+                <div class="my-experiences">
+                    <span>MY EXPERIENCES</span>
+                    <div class="services-slogan">
+                        Inovative Solutions
+                    </div>
+                </div><br>
+                <div>
+                    ok
+                </div>
             </div>
         </section>
 
@@ -74,9 +82,6 @@
         @endif
 
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
     <style>
         .head {
@@ -117,6 +122,10 @@
                 display: none;
             }
 
+            .buttons {
+                margin-bottom: 10px;
+            }
+
             .name,
             .title {
                 font-size: 45px;
@@ -127,7 +136,6 @@
 
         .experiences {
             background-color: #583EBC;
-            height: 50px;
         }
 
         .follow-me {
@@ -155,12 +163,58 @@
         }
 
         .bio {
-            margin-top: 20px;
+            margin-top: 12px;
             line-height: 30px;
             word-wrap: break-word;
             text-align: justify;
         }
+
+        .about-button {
+            padding: 7px 50px 7px 50px;
+            background-color: black;
+            border: none;
+        }
+
+        .download-cv-button {
+            background-color: #583EBC;
+        }
+
+        .my-experiences {
+            text-align: center;
+            color: white;
+            padding: 30px 0px 0px 0px;
+        }
+
+        #dash {
+            animation: blink 1s steps(1) infinite;
+
+        }
+
+        @keyframes blink {
+
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .services-slogan {
+            font-weight: bold;
+            font-size: 45px;
+        }
     </style>
+
+    <script>
+        const dash = document.getElementById("dash");
+
+        setTimeout(() => {
+            dash.style.animation = 'blink 1s steps(1) infinite';
+        }, 2000);
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
