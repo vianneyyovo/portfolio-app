@@ -39,7 +39,7 @@
                     </p>
                     <div class="buttons">
                         <button type="button" class="btn btn-secondary about-button gap-5">About</button>
-                        <button type="button" class="btn btn-secondary download-cv-button">Download CV</button>
+                        <button type="button" class="btn btn-secondary download-cv-button"><a href="/images/cv_vianney_yovo_dev_en.pdf" class="download-cv_link" download>Download CV</a></button>
                     </div>
                 </div>
                 <div class="col-md-4 photo">
@@ -56,7 +56,66 @@
                 <div class="my-experiences">
                     <span>MY EXPERIENCES</span>
                     <div class="services-slogan">
-                        Inovative Solutions
+                        Innovative Solutions
+                    </div>
+                </div><br>
+                <div>
+                    ok
+                </div>
+            </div>
+        </section>
+        <section class="skills">
+            <div class="head">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <div class="my-skills">
+                            <span>MY SKILLS</span>
+                            <div class="skills-words">
+                                Beautyfull and unique digital</br>experiences
+                            </div>
+                            <p class="skills-txt">
+                                Blending creativity with technical expertise to deliver seamless, high-quality results. Each project is crafted to perfection, focusing on both functionality and memorable user experiences.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12  col-md-8">col-sm-4</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="work">
+            <div class="head">
+                <div class="my-works">
+                    <h3>Featured Works</h3>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+                        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+                        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="education">
+            <div class="head">
+                <div class="my-education">
+                    <h3>Education</h3>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+                        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+                        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="experiences">
+            <div class="head">
+                <div class="my-experiences">
+                    <div class="services-slogan">
+                        Hapy Clients Say
                     </div>
                 </div><br>
                 <div>
@@ -185,6 +244,16 @@
             padding: 30px 0px 0px 0px;
         }
 
+        .my-works {
+            text-align: center;
+
+        }
+
+        .my-works h3 {
+            font-weight: bold;
+            font-size: 60px;
+        }
+
         #dash {
             animation: blink 1s steps(1) infinite;
 
@@ -200,6 +269,33 @@
         .services-slogan {
             font-weight: bold;
             font-size: 45px;
+        }
+
+        .download-cv_link {
+            text-decoration: none;
+        }
+
+        .download-cv-button a {
+            color: white;
+        }
+
+        .skills {
+            padding-top: 40px;
+        }
+
+        .skills-words {
+            line-height: 45px;
+            font-size: 40px;
+            font-weight: 900;
+        }
+
+        .skills-txt {
+            text-align: justify;
+            margin-top: 20px;
+        }
+
+        .my-education h3 {
+           text-align: center; 
         }
     </style>
 

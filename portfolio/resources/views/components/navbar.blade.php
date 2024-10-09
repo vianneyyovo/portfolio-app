@@ -1,7 +1,7 @@
 <div>
     <nav class="navbar navbar-expand-lg header">
         <div class="container-fluid menu">
-            <a class="navbar-brand mobile-logo" href="#">Logo</a>
+            <a class="navbar-brand mobile-logo" href="#">Welcome to my portfolio</a>
             <span class="navbar-toggler drop" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </span>
@@ -17,10 +17,7 @@
                             <a class="nav-link" href="#">Services</a>
                         </li>
                     </ul>
-                <span class="justify-content-center descktop-logo">
-
-                    Logo
-                </span>
+                <span class="justify-content-center descktop-logo">Welcome to my portfolio</span>
 
                 <span class="">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
